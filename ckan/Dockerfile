@@ -3,7 +3,7 @@ FROM openknowledge/ckan-base:2.8
 MAINTAINER Your Name Here <you@example.com>
 
 # Set timezone
-ARG TZ
+ARG TZ=UTC
 RUN echo $TZ > /etc/timezone
 RUN cp /usr/share/zoneinfo/$TZ /etc/localtime
 

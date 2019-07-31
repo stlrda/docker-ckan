@@ -10,3 +10,4 @@ src/*
 .Spotlight-V100
 .Trashes
 .idea/*
+docker-ckan.iml

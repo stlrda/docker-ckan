@@ -14,9 +14,7 @@ RUN cp /usr/share/zoneinfo/${TZ:-UTC}  /etc/localtime
 #    pip install -e git+https://github.com/ckan/ckanext-dcat.git@v0.0.6#egg=ckanext-dcat && \
 #    pip install -r https://raw.githubusercontent.com/ckan/ckanext-dcat/v0.0.6/requirements.txt
 
-RUN source /usr/lib/ckan/default/bin/activate
-
-    pip install ckanext-pdfview
+RUN pip install ckanext-pdfview
     #https://github.com/ckan/ckanext-pdfview
 
 #    pip install -e git+https://github.com/ckan/ckanext-scheming

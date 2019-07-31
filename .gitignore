@@ -9,5 +9,14 @@ src/*
 ._*
 .Spotlight-V100
 .Trashes
+<<<<<<< HEAD
 .idea/*
 docker-ckan.iml
+=======
+.idea/docker-ckan.iml
+.idea/misc.xml
+.idea/modules.xml
+.idea/sbt.xml
+.idea/vcs.xml
+.idea/workspace.xml
+>>>>>>> parent of a6ef93c... ignore all .idea project files

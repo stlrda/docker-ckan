@@ -14,8 +14,12 @@ RUN pip install -e git+https://github.com/ckan/ckanext-pages.git#egg=ckanext-pag
         #https://github.com/ckan/ckanext-pages
     pip install ckanext-pdfview && \
         #https://github.com/ckan/ckanext-pdfview
-    pip install ckanext-geoview
+    pip install ckanext-geoview && \
         #https://github.com/pduchesne/ckanext-geoview
+    pip install -e 'git+https://github.com/azavea/ckanext-showcase.git#egg=ckanext-showcase' && \
+        #https://github.com/azavea/ckanext-showcase
+    pip install -e 'git+https://github.com/stlrda/ckanext-odp_theme.git#egg=ckanext-odp_theme'
+        #https://github.com/stlrda/ckanext-odp_theme
 #    pip install -e git+https://github.com/ckan/ckanext-dcat.git@v0.0.6#egg=ckanext-dcat && \
 #    pip install -r https://raw.githubusercontent.com/ckan/ckanext-dcat/v0.0.6/requirements.txt
 

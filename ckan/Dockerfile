@@ -12,6 +12,7 @@ RUN cp /usr/share/zoneinfo/${TZ:-UTC}  /etc/localtime
 # For instance:
 RUN pip install -e git+https://github.com/ckan/ckanext-pages.git#egg=ckanext-pages && \
         #https://github.com/ckan/ckanext-pages
+    apk add vim && \
     pip install ckanext-pdfview && \
         #https://github.com/ckan/ckanext-pdfview
     pip install ckanext-geoview && \

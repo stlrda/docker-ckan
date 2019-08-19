@@ -19,3 +19,4 @@ docker-ckan.iml
 .idea/workspace.xml
 
 .env.local
+.env.remote

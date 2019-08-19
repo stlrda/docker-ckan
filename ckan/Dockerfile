@@ -7,6 +7,8 @@ ARG TZ
 RUN echo ${TZ:-UTC} > /etc/timezone
 RUN cp /usr/share/zoneinfo/${TZ:-UTC}  /etc/localtime
 
+COPY production.ini ${APP_DIR}
+
 # Install any extensions needed by your CKAN instance
 # (Make sure to add the plugins to CKAN__PLUGINS in the .env file)
 # For instance:

@@ -19,15 +19,24 @@ RUN pip install -e git+https://github.com/ckan/ckanext-pages.git#egg=ckanext-pag
         #https://github.com/ckan/ckanext-pdfview
     pip install ckanext-geoview && \
         #https://github.com/pduchesne/ckanext-geoview
+    pip install -e 'git+https://github.com/ckan/ckanext-scheming.git#egg=ckanext-scheming' && \
+        #https://github.com/ckan/ckanext-scheming
     pip install -e 'git+https://github.com/azavea/ckanext-showcase.git#egg=ckanext-showcase' && \
         #https://github.com/azavea/ckanext-showcase
-    pip install -e 'git+https://github.com/stlrda/ckanext-odp_theme.git#egg=ckanext-odp_theme'
+    pip install -e 'git+https://github.com/stlrda/ckanext-odp_theme.git#egg=ckanext-odp_theme' && \
         #https://github.com/stlrda/ckanext-odp_theme
+    pip install -e 'git+https://github.com/ckan/ckantoolkit.git#egg=ckantoolkit' && \
+        #https://github.com/ckan/ckantoolkit
+    pip install ckanapi
+        #https://github.com/ckan/ckanapi
 #    pip install -e git+https://github.com/ckan/ckanext-dcat.git@v0.0.6#egg=ckanext-dcat && \
 #    pip install -r https://raw.githubusercontent.com/ckan/ckanext-dcat/v0.0.6/requirements.txt
 
 # Install the extension(s) you wrote for your own project
 # RUN pip install -e git+https://github.com/your-org/ckanext-your-extension.git@v1.0.0#egg=ckanext-your-extension
+
+# run this after the plugins are installed so it overwrites the default in the plugin directory
+COPY schemas/ ${APP_DIR}/src/ckanext-scheming/ckanext/scheming/
 
 # Apply any patches needed to CKAN core or any of the built extensions (not the
 # runtime mounted ones)

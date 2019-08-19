@@ -9,10 +9,13 @@ src/*
 ._*
 .Spotlight-V100
 .Trashes
+.idea/*
+docker-ckan.iml
 .idea/docker-ckan.iml
 .idea/misc.xml
 .idea/modules.xml
 .idea/sbt.xml
 .idea/vcs.xml
 .idea/workspace.xml
+
 .env.local

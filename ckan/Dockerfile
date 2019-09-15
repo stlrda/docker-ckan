@@ -38,6 +38,9 @@ RUN pip install -e git+https://github.com/ckan/ckanext-pages.git#egg=ckanext-pag
 # run this after the plugins are installed so it overwrites the default in the plugin directory
 COPY schemas/ ${APP_DIR}/src/ckanext-scheming/ckanext/scheming/
 
+# favicon
+COPY resources/favicon/serve/ ${APP_DIR}/src/ckanext-odp-theme/ckanext/odp_theme/public
+
 # Apply any patches needed to CKAN core or any of the built extensions (not the
 # runtime mounted ones)
 # See https://github.com/okfn/docker-ckan#applying-patches

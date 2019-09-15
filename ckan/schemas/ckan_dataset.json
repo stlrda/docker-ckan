@@ -26,6 +26,7 @@
       "form_snippet": "markdown.html",
       "form_placeholder": "eg. Some useful notes about the data",
       "help_text": "A short, summary description of what the data set or files are and what information is included in it. Often, taken directly from the source or provider."
+
     },
     {
       "field_name": "tag_string",
@@ -126,21 +127,15 @@
       "field_name": "temporal_start",
       "label": "Time Period Covered (Start)",
       "form_placeholder": "YYYY-MM-DD",
-      "form_snippet": "text.html",
+      "form_snippet": "date.html",
       "help_text": "The year or the start of the range of years represented by data set of file. Use years (YYYY), dates (YYYY-MM-DD), or dates and times (YYY-MM-DD\"T\"HHMMSS)"
     },
     {
       "field_name": "temporal_end",
       "label": "Time Period Covered (End)",
       "form_placeholder": "YYYY-MM-DD",
-      "form_snippet": "text.html",
+      "form_snippet": "date.html",
       "help_text": "The year or the end of the range of years represented by data set of file. Use years (YYYY), dates (YYYY-MM-DD), or dates and times (YYY-MM-DD\"T\"HHMMSS)"
-    },
-    {
-      "field_name": "license",
-      "label": "License",
-      "form_snippet": "text.html",
-      "help_text": "The type of copyright license for the data set or files that describes copyright permissions."
     },
     {
       "field_name": "frequency_data_change",
@@ -215,9 +210,15 @@
       ]
     },
     {
-      "field_name": "organization",
+      "field_name": "license_id",
+      "label": "License",
+      "form_snippet": "license.html",
+      "help_text": "License definitions and additional information can be found at http://opendefinition.org/"
+    },
+    {
+      "field_name": "owner_org",
       "label": "Organization",
-      "form_snippet": "text.html"
+      "preset": "dataset_organization"
     },
     {
       "field_name": "publisher_name",
@@ -245,20 +246,20 @@
   ],
   "resource_fields": [
     {
+      "field_name": "url",
+      "label": "URL",
+      "preset": "resource_url_upload"
+    },
+    {
       "field_name": "name",
-      "label": "Title",
-      "help_text": "The given name of an individual data set or file contained within the larger project or resource."
+      "label": "Name",
+      "form_placeholder": "eg. January 2011 Gold Prices"
     },
     {
       "field_name": "description",
       "label": "Description",
       "form_snippet": "markdown.html",
-      "help_text": "A short, summary description of the individual data set or file. Often, taken directly from the source or provider."
-    },
-    {
-      "field_name": "url",
-      "label": "Link",
-      "preset": "resource_url_upload"
+      "form_placeholder": "Some useful notes about the data"
     },
     {
       "field_name": "format",
